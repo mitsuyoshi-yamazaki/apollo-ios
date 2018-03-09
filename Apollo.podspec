@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.1'
   s.watchos.deployment_target = '3.0'
 
+  s.dependency 'Starscream'
+
   s.subspec 'Core' do |ss|
     ss.source_files = 'Sources/Apollo/*.swift'
     ss.resource = 'scripts/check-and-run-apollo-codegen.sh'
